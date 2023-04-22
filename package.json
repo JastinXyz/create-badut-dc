@@ -1,6 +1,6 @@
 {
   "name": "create-badut-dc",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Initialize a new Discord.js bot project with one command.",
   "main": "index.js",
   "scripts": {

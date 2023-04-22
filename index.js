@@ -50,7 +50,8 @@ async function main() {
   const start = Date.now();
   copyRecursiveSync(`${__dirname}/template`, name);
   await fs.writeFileSync(name + '/package.json', packageDotJson);
-  await fs.writeFileSync(name + '/.env', `TOKEN=${token}`)
+  await fs.writeFileSync(name + '/.env', `TOKEN=${token}`);
+  await fs.renameSync(name + '/gitignore', name + '/.gitignore');
 
   console.log(`Initialized new project at ./${name}`);
 
